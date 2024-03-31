@@ -5,9 +5,38 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.small-dashed{
+  /* background-color: #F7F7F70D; */
+  width: 422px;
+  height: 475px;
+  border-radius: 32px;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='32' ry='32' stroke='%23D50009FF' stroke-width='2' stroke-dasharray='6' stroke-dashoffset='0' stroke-linecap='round'/%3e%3c/svg%3e");
+}
+.big-dashed{
+  /* border: 1px dashed #D50009; */
+  width: 422px;
+  height: 575px;
+  border-radius: 40px;
+  background-color: #EAE5E5;
+  /* background-color: #F7F7F70D; */
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='39' ry='39' stroke='%23D50009FF' stroke-width='2' stroke-dasharray='11%2c 17%2c 13%2c 13' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+ 
+}
+.test-dashed{
+background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='35' ry='35' stroke='%23D50009FF' stroke-width='5' stroke-dasharray='6' stroke-dashoffset='0' stroke-linecap='butt'/%3e%3c/svg%3e");
+border-radius: 35px;
+padding: 1rem 3rem;
+margin-top: 1rem;
+color: #000 ;
+}
+.test-dashed p{
+  color: #000 ;
+  font-weight: 600;
 }

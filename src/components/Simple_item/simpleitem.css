@@ -1,0 +1,26 @@
+.icon-box{
+    padding: 10px 15px;
+    border: 1px solid #999999;
+    border-radius: 15px;
+  }
+  .text-box{
+    width: 300px;
+    border-radius: 15px;
+    background-color: #F2ECEC;
+    padding: 10px 15px;
+  }
+  .text-box .btn{
+    border-radius: 50%;
+    border: 1px solid #999999;
+    padding: 9px;
+    width: 42px;
+    height: 42px;
+  }
+  .text-box p{
+    color: #0d0c22;
+    font-weight: 600;
+  }
+  .text-box small{
+    color: #999999;
+  }
+  

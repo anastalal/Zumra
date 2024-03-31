@@ -1,0 +1,18 @@
+aside{
+    width: 95px;
+    height: 100%;
+    background-color: #DDBF9B;
+    position: fixed;
+}
+.nav-item a{
+    margin-left: 23%;
+}
+.nav-item{
+    padding: 15px 3px;
+    margin-left: 8px;
+}
+.nav-item.active{
+    background-color: white;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
