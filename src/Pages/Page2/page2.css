@@ -60,3 +60,9 @@
     /* background-color: transparent; */
     border-radius: 50px;
   }
+  .result p{
+    color: #000;
+    font-weight: 600;
+    text-align: left;
+  }
+  

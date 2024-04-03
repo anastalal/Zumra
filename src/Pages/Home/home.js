@@ -3,6 +3,7 @@ import './home.css';
 import blood from '../../images/Blood Cells.png';
 import logo from '../../images/image zumra 4.svg';
 import LinkIcon from '../../components/Link_icon/linkIcon';
+import { Link } from 'react-router-dom';
 function Home() {
   return (
     <div className="container">
@@ -24,7 +25,7 @@ function Home() {
         <LinkIcon Icon={'carbon:result'} label={'healthicons:medical-sample-outline'}/>
         </div>
         <div className='text-center'>
-        <button className='btn mybtn'>Start</button>
+        <Link to={'page1'} className='btn mybtn'>Start</Link>
         </div>
         </div>
       </div>

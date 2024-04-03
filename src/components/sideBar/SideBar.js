@@ -11,13 +11,13 @@ function SideBar(props) {
         <aside className="d-flex align-items-center justify-content-center">
         <ul className="d-flex flex-column gap-5 nav w-100 align-items-center">
             <li className={`nav-item w-100 ${props.activeItem === 'healthicons' ? 'active' : ''}`}>
-            <LinkImg Icon={test} label={'healthicons:medical-sample-outline'}/>
+            <LinkImg url={'/page1'} Icon={test} label={'healthicons:medical-sample-outline'}/>
             </li>
             <li className={`nav-item w-100 ${props.activeItem === 'search' ? 'active' : ''}`}>
-            <LinkImg Icon={search} label={'healthicons:medical-sample-outline'}/>
+            <LinkImg url={'/page2'} Icon={search} label={'healthicons:medical-sample-outline'}/>
             </li>
             <li className={`nav-item w-100 ${props.activeItem === 'home' ? 'active' : ''}`}>
-            <LinkImg Icon={home} label={'healthicons:medical-sample-outline'}/>
+            <LinkImg url={'/home'} Icon={home} label={'healthicons:medical-sample-outline'}/>
             </li>
         </ul>
         </aside>

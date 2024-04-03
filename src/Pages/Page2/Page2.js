@@ -7,6 +7,7 @@ import SideBar from '../../components/sideBar/SideBar';
 import res1 from '../../images/res1.png';
 import React, { useState } from "react";
 import SimpleItem from '../../components/Simple_item/SimpleItem';
+import { Icon } from '@iconify/react';
 function Page2() {
     const [selectedSimpleId, setSelectedSimpleId] = useState(null);
 
@@ -93,21 +94,27 @@ function Page2() {
         <div className='resultd'>
         {selectedSimpleId && (
         <div>
-        <div className='result text-center' id='result'>
+        <div className='result text-center ' id='result'>
                 <img width={'200'} height={'200'} src={result}/>
-               <div>
-                <img width={'24'} height={'30px'} src={res1}/>
-               <p>Sample ID: {selectedSimpleId}</p>
+               <div className='mt-3 item row'>
+                <img width={'24'} className='col-md-2'  height={'24px'} src={res1}/>
+               <p  className='  col-md-10'> {selectedSimpleId}</p>
                </div>
-                <h4>Diagnosis Result:</h4>
-                <div className='test-dashed'>
-                <p>
-                Positive, <br/>
-               ALL is detected. 
 
-                </p>
+               <div className='mt-2 item row'>
+               <Icon icon={'ic:outline-date-range'}  className='col-md-2'  style={{ fontSize: '40px', color:'#DBA35E' }}/>
+               <p className='  col-md-10'>Uploaded on: 12/9/2021</p>
+               </div>
 
-                </div>
+               <div className='mt-2 item row'>
+               <Icon icon={'carbon:result'} className='col-md-2'    style={{ fontSize: '40px', color:'#DBA35E' }}/>
+               <p className=' m col-md-10'>Diagnosis Result:</p>
+               </div>
+               <div className='text-center mt-3'>
+              <p className='text-center'>  Nagative <br/> Normal Blood Simple</p>
+               </div>
+
+               
         </div>
         </div>
       )}
